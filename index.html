@@ -1,0 +1,45 @@
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.12.0/firebase-firestore.js"></script>
+</head>
+<body>
+
+<h1>Taskd: Never forget anything.</h1>
+
+<div class="content">
+
+    <form id="add-reminder-form">
+        <input type="text" name="phone" placeholder="Phone with Country Code">
+        <input type="text" name="message" placeholder="Your Reminder">
+        <button>Add Cafe</button>
+
+
+    </form>
+
+    <ul id="reminder-list"></ul>
+
+</div>
+
+<script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyDyHPu-TWE3m8cp2iTimySIL__GXh2A9Ls",
+        authDomain: "firestoredemo-f3613.firebaseapp.com",
+        databaseURL: "https://firestoredemo-f3613.firebaseio.com",
+        projectId: "firestoredemo-f3613",
+        storageBucket: "firestoredemo-f3613.appspot.com",
+        messagingSenderId: "757926250272",
+        appId: "1:757926250272:web:9c8e9eccc65a2fe3823945",
+        measurementId: "G-HD0Y0L7YF5"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore()
+</script>
+
+<script src="app.js"></script>
+
+</body>
+</html>
